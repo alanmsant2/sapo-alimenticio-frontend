@@ -8,7 +8,7 @@
 body {
     background: #E5E9F2;
     font: 14px sans-serif;
-    font-family: Lato;
+    font-family: Lato!important;
 
     color: #47525E;
     -webkit-font-smoothing: antialiased !important;

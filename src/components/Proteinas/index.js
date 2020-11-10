@@ -10,7 +10,7 @@ class Proteinas extends Component {
 
     async componentDidMount(){
         
-        let lurl = "http://localhost:8000/api/alimentos/proteinas";
+        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/proteinas";
         await fetch(lurl)
         .then((response) => response.json())
         .then((responseJson) => { this.setState({ alimentos: responseJson}); })

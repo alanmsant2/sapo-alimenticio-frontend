@@ -9,7 +9,7 @@ class Home extends Component {
     }
 
     async componentDidMount(){
-        let lurl = "http://localhost:8000/api/alimentos";
+        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/";
         await fetch(lurl)
         .then((response) => response.json())
         .then((responseJson) => { this.setState({ alimentos: responseJson}); })
