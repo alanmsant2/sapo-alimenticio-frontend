@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #E5E9F2;
+    font: 14px sans-serif;
+    font-family: Lato;
+
+    color: #47525E;
+    -webkit-font-smoothing: antialiased !important;
+}
+

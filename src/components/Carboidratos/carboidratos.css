@@ -1,0 +1,46 @@
+.carboidratos-text{
+    font-family: Lato;
+
+    line-height: 62px;    
+    font-weight: 600;
+    font-size: 48px;
+    margin: auto;
+    padding: 90px 30px;
+    width: 100%;
+    max-width: 1020px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    /* align-content: center; */
+    text-align: center;
+}
+
+.formatacao {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 48px;
+    line-height: 62px;
+    width: 1020px;
+    text-align: center;
+}
+
+.carboidratos-text .texto-interno {
+    font-style: italic;
+    color: #5A6978;
+}
+
+.sessao-tabela {
+    text-align: center;
+    width: 90%;
+    max-width: 90%;
+    display: flex;
+    margin: auto;
+    padding: 0;
+    align-items: center;
+}
+
+.largura-tabela {
+    width: 100%;
+    max-width: 100%; 
+}
+
