@@ -9,7 +9,7 @@ class Carboidratos extends Component {
     }
 
     async componentDidMount(){
-        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/carboidratos";
+        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/carboidratos/";
         fetch(lurl)
         .then((response) => response.json())
         .then((responseJson) => { this.setState({ alimentos: responseJson}); })
