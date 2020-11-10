@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+// import { useHistory } from "react-router-dom";
 import { uniqueId } from "lodash";
 // import filesize from "filesize";
 
@@ -17,12 +18,16 @@ import CachedIcon from '@material-ui/icons/Cached';
 import Button from '@material-ui/core/Button';
 
 
+
 class Ferramentas extends Component {
   state = {
     uploadedFiles: []
   };
 
+
   async componentDidMount() {
+
+
     const response = await api.get("api/arquivos/");
 
     this.setState({
@@ -128,6 +133,8 @@ class Ferramentas extends Component {
       //   )
       alert('Atualização realizada com sucesso!');
       window.location.reload();
+      // history.push("/ferramentas");
+      
       console.log(response);
     });
     // return alert('Limpar realizada');
