@@ -113,7 +113,7 @@ class Ferramentas extends Component {
       //   <CustomizedSnackbars titulo={''} mensagem={'Limpeza realizada com sucesso!'}/>
       // )
       alert('Limpeza realizada com sucesso!');
-      window.location.reload(false);
+      window.location.reload();
       console.log(response);
     });
     // return alert('Limpar realizada');
@@ -127,7 +127,7 @@ class Ferramentas extends Component {
       //   <CustomizedSnackbars titulo={''} mensagem={'Atualização realizada com sucesso!'}/>
       //   )
       alert('Atualização realizada com sucesso!');
-      window.location.reload(false);
+      window.location.reload();
       console.log(response);
     });
     // return alert('Limpar realizada');
