@@ -9,7 +9,7 @@ class Home extends Component {
     }
 
     async componentDidMount(){
-        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/";
+        let lurl = process.env.REACT_APP_API_BACKEND+"/api/alimentos/";
         await fetch(lurl)
         .then((response) => response.json())
         .then((responseJson) => { this.setState({ alimentos: responseJson}); })
@@ -23,6 +23,7 @@ class Home extends Component {
             <div>
                 <div className="home-text">                    
                     <p>Bem-vindo ao <span className="texto-interno">Sapo Alimentício</span>, aqui você irá encontrar informações nutricionais dos principais alimentos do mercado.</p>
+                    {/* <p>{process.env.REACT_APP_API_BACKEND}</p> */}
                 </div>
                 <section className="sessao-tabela">
 

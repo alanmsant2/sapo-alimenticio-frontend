@@ -9,7 +9,7 @@ class Gorduras extends Component {
     }
 
     async componentDidMount(){
-        let lurl = "https://sapo-alimenticio.herokuapp.com/api/alimentos/gorduras/";
+        let lurl = process.env.REACT_APP_API_BACKEND+"/api/alimentos/gorduras/";
         await fetch(lurl)
         .then((response) => response.json())
         .then((responseJson) => { this.setState({ alimentos: responseJson}); })
