@@ -36,6 +36,7 @@ class Gorduras extends Component {
                             ]}
                             data={this.state.alimentos}
                             title="Tabela de Alimentos com mais Gorduras"
+                            onRowClick={() => {}}
                             options={{
                                 headerStyle: {
                                   backgroundColor: '#EFF2F7',

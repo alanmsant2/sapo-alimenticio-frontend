@@ -36,6 +36,7 @@ class Carboidratos extends Component {
                             ]}
                             data={this.state.alimentos}
                             title="Tabela de Alimentos com mais Caboidratos"
+                            onRowClick={() => {}}
                             options={{
                                 headerStyle: {
                                   backgroundColor: '#EFF2F7',

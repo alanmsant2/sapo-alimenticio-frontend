@@ -36,6 +36,7 @@ class Proteinas extends Component {
                             ]}
                             data={this.state.alimentos}
                             title="Tabela de Alimentos com mais Proteínas"
+                            onRowClick={() => {}}
                             options={{
                                 headerStyle: {
                                   backgroundColor: '#EFF2F7',
