@@ -5,7 +5,8 @@ import './home.css';
 class Home extends Component {
 
     state = {
-        alimentos: []
+        alimentos: [],
+        selectedRow: null
     }
 
     async componentDidMount(){
@@ -39,7 +40,11 @@ class Home extends Component {
                             ]}
                             data={this.state.alimentos}
                             title="Tabela de Alimentos"
+                            // onRowClick={((evt, selectedRow) => this.setState(selectedRow.tableData.id))}
+                            onRowClick={() => {}}
+                            // onSelectionChange={((evt, selectedRow) => this.setState(selectedRow.tableData.id))}
                             options={{
+                                
                                 headerStyle: {
                                   backgroundColor: '#EFF2F7',
                                   font: '16px',
@@ -47,10 +52,19 @@ class Home extends Component {
                                   color: '#47525E',
                                   fontFamily: 'Lato'
                                 },
-                                rowStyle: {
+                                rowStyle: 
+                                // rowData => ({
+                                    // backgroundColor: (this.selectedRow === rowData.tableData.id) ? '#47525E' : '#FFF',
+                                    // color: '#47525E',
+                                    // fontFamily: 'Lato',
+                                // }),
+                                {
                                     color: '#47525E',
-                                    fontFamily: 'Lato'                                    
+                                    // backgroundColor: '#47525E',
+                                    fontFamily: 'Lato',
+
                                 },
+                                
                                 pageSize:10,
                                 pageSizeOptions: [5, 10, 20, 50, 100]
                             }}
